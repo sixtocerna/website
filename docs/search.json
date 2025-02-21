@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "blog/posts/tests.html",
+    "href": "blog/posts/tests.html",
+    "title": "My First Blog Post",
+    "section": "",
+    "text": "This is my first blog post in Quarto! 🎉"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "My Blog",
+    "section": "",
+    "text": "Welcome to my blog! Here you’ll find my latest posts.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nMy First Blog Post\n\n\n\n\n\n\nTech\n\n\nPersonal\n\n\n\n\n\n\n\n\n\nFeb 21, 2025\n\n\nYour Name\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Sixto",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  }
+]

@@ -1,0 +1,9 @@
+---
+title: "My First Blog Post"
+author: "Your Name"
+date: 2025-02-21
+categories: [Tech, Personal]
+format: html
+---
+
+This is my first blog post in Quarto! 🎉
