@@ -1,7 +1,183 @@
 ---
-title: "Sixto"
+format:
+    html:
+      toc: false
+      include-in-header:
+        - text: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 ---
 
-This is a Quarto website.
+<div class="hero">
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+<p class="hero-subtitle">Hola, soy Sixto</p>
+
+<p class="hero-title">
+  Trabajo en <span class="orange-highlight">Inteligencia Artificial</span><br>
+  y en sus aplicaciones en empresas
+</p>
+
+<p class="hero-text">Actualmente completando una maestría en Inteligencia Artificial en Université Paris Cité</p>
+
+</div>
+
+
+<div class="social-links">
+  <a href="mailto:sixto2cerna@gmail.com" aria-label="Email">
+    <i class="fa-solid fa-envelope"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/sixto-cerna" aria-label="LinkedIn">
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
+  <a href="https://github.com/sixtocerna" aria-label="LinkedIn">
+    <i class="fa-brands fa-github"></i>
+  </a>
+</div>
+
+**Acerca de mí**
+
+```{=html}
+<div class="content-section">
+  <p>
+  Me llamo Sixto Cerna, soy de El Salvador 🇸🇻 y estoy realizando mis estudios en París 🇫🇷. He trabajado en startups y en laboratorios de Inteligencia Artificial (IA) en LATAM y Francia. <br>
+  Creo que hay muy poca información en español que aborde el tema de la IA. Mi objetivo es compartir proyectos que 1) eduquen acerca de cómo funciona la IA y 2) contribuyan a que haya más personas capaces de identificar oportunidades con esta tecnología. 
+  </p>
+
+  <p>
+  P.D. Busco empresas (cualquier rubro o tamaño) que estén interesadas en utilizar análisis de datos y/o IA para un proyecto. Si esto les llama la atención, pueden <a class="inline-link" href="mailto:sixto2cerna@gmail.com?subject=An%C3%A1lisis%20de%20datos%20e%20IA%20en%20[nombre%20empresa]&body=Hola%20Sixto,%0A%0AMe%20llamo%20[nombre].%20Me%20gustar%C3%ADa%20saber%20m%C3%A1s%20acerca%20del%20proyecto%20que%20est%C3%A1s%20desarrollando%20acerca%20del%20uso%20de%20an%C3%A1lisis%20de%20datos%20e%20IA%20en%20empresas.">contactarme aquí</a>.
+  </p>
+
+</div>
+```
+
+**Educación**
+
+```{=html}
+
+<div class="content-section">
+  <div class="education-experience-entry">
+    <div class="logo-container">
+      <img src="assets/psl_logo.png" alt="PSL University Logo" class="logo">
+    </div>
+    <div class="university-company-info">
+      <p class="university-company-name"> <a class="card-link" href="https://psl.eu/en/education/multidisciplinary-undergraduate-degree-cpes">Université PSL - Lycée Henri IV</a></p>
+      <p class="period">Septiembre 2020 - Junio 2023</p>
+      <p class="location">Paris</p>
+    </div>
+    <div class="information">
+      <p class="name">Ciclo Pluridisciplinario de Estudios Superiores (CPES)</p>
+      <p class="field">Matemáticas e Informática</p>
+    </div>
+  </div>
+
+  <div class="education-experience-entry">
+    <div class="logo-container">
+      <img src="assets/paris_cite_logo.png" alt="Université Paris Cité Logo" class="logo">
+    </div>
+    <div class="university-company-info">
+      <p class="university-company-name"><a href="https://master.math.u-paris.fr/en/parcours/data/" class="card-link">Université Paris Cité</a></p>
+      <p class="period">Septiembre 2024 - Junio 2026</p>
+      <p class="location">Paris</p>
+    </div>
+    <div class="information">
+      <p class="name">Maestría en Matemáticas e Informática</p>
+      <p class="field">Inteligencia Articifial</p>
+    </div>
+  </div>
+
+</div>
+
+```
+**Experiencia profesional**
+
+```{=html}
+<div class="content-section">
+  <div class="education-experience-entry">
+    <div class="logo-container">
+      <img src="assets/kalto_logo.png" alt="Kalto Logo" class="logo">
+    </div>
+    <div class="university-company-info">
+      <p class="university-company-name"><a class="card-link" href="https://www.kalto.la">Kalto</a></p>
+      <p class="period">Septiembre 2023 - Marzo 2024</p>
+      <p class="location">Mexico (Remoto)</p>
+    </div>
+    <div class="information">
+      <p class="name">Científico de Datos</p>
+    </div>
+  </div>
+
+  <div class="education-experience-entry">
+    <div class="logo-container">
+      <img src="assets/tripartie_logo.png" alt="Tripartie Logo" class="logo">
+    </div>
+    <div class="university-company-info">
+      <p class="university-company-name"><a class="card-link" href="https://tripartie.com/">Tripartie</a></p>
+      <p class="period">Julio 2022 - Agosto 2022</p>
+      <p class="location">Paris</p>
+    </div>
+    <div class="information">
+      <p class="name">Pasante en Inteligencia Artificial</p>
+    </div>
+  </div>
+
+    <div class="education-experience-entry">
+    <div class="logo-container">
+      <img src="assets/ens_logo.png" alt="ENS Logo" class="logo">
+    </div>
+    <div class="university-company-info">
+      <p class="university-company-name"><a class="card-link" href="https://csd.ens.psl.eu">ENS Ulm</a></p>
+      <p class="period">Enero 2022 - Julio 2022</p>
+      <p class="location">Paris</p>
+    </div>
+    <div class="information">
+      <p class="name">Pasante en investigación en Inteligencia Artificial</p>
+    </div>
+  </div>
+
+</div>
+```
+
+**Otros**
+
+```{=html}
+<div class="content-section">
+  <div class="education-experience-entry">
+    <div class="logo-container">
+      <img src="assets/makers_logo.png" alt="Makers Logo" class="logo">
+    </div>
+    <div class="university-company-info">
+      <p class="university-company-name"><a href="https://makers.ngo" class="card-link">Makers Fellowship (MF3)</a></p>
+      <p class="period">Julio 2023 - Deciembre 2023</p>
+    </div>
+    <div class="information">
+      <p class="name">Business Fellow</p>
+    </div>
+  </div>
+
+  <div class="education-experience-entry">
+    <div class="logo-container">
+      <img src="assets/LXAI_logo.png" alt="LXAI logo" class="logo">
+    </div>
+    <div class="university-company-info">
+      <p class="university-company-name"><a href="https://www.latinxinai.org" class="card-link">LatinX in AI</a></p>
+      <p class="period">Septiembre 2023 - Diciembre 2023</p>
+    </div>
+    <div class="information">
+      <p class="name">Mentorías en IA</p>
+    </div>
+  </div>
+
+    <div class="education-experience-entry">
+    <div class="logo-container">
+      <img src="assets/aefe_logo.png" alt="AEFE logo" class="logo">
+    </div>
+    <div class="university-company-info">
+      <p class="university-company-name">AEFE</p>
+      <p class="period">Junio 2020</p>
+    </div>
+    <div class="information">
+      <p class="name">Beca completa para estudios unviersitarios en Francia</p>
+    </div>
+  </div>
+
+</div>
+```

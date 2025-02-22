@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Sixto Cerna"
+  title: "SC"
   navbar:
     left:
       - href: index.qmd
