@@ -4,13 +4,11 @@ body {
 }
 
 .hero {
-    font-family: 'Roboto Mono', monospace;
     width: 100%;
     padding: 20px 20px;
     box-sizing: border-box;
     text-align: center;
     color: #333;
-    margin-bottom: 40px;
 }
 
 .hero-subtitle {
@@ -22,34 +20,26 @@ body {
 }
 
 .hero-title {
-    font-size: 30px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    letter-spacing: 0.1em;
+    font-size: 200%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .orange-highlight {
     font-weight: bold;
     color: #e87c1a;
-    position: relative;
-    display: inline-block;
-  }
-
-.orange-highlight::after {
-    content: '';
-    position: absolute;
-    left: 7px;
-    bottom: 7px;
-    width: 100%;
-    height: 10px;
-    background-color: rgba(232, 124, 26, 0.2);
-    z-index: -1;
-    border-radius: 3px;
+    text-decoration: underline;
+    text-decoration-thickness: 0.15em; /* Adjust thickness */
+    text-decoration-color: rgba(232, 124, 26, 0.3); /* Match highlight color */
+    text-underline-offset: 4px; /* Move the underline lower */
+    text-decoration-skip-ink: none;
 }
 
 .hero-text {
     margin-top: 20px;
-    font-size: 14px;
-    color: #666;
+    font-size: 1em;
+    font-weight: lighter;
 }
 
 .hero .math-text {
@@ -63,6 +53,8 @@ body {
     justify-content: center; /* Centers items horizontally */
     align-items: center; /* Centers items vertically */
     width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .social-links a {
@@ -190,4 +182,14 @@ body {
 
 .card-link:hover {
     color: #e87c1a; /* Optional: Add hover effect (same as highlight color) */
+}
+
+.separator {
+  border: none;
+  height: 1px;
+  background-color: #888888; /* Orange color */
+  width: 80%; /* Adjust width */
+  margin: auto; /* Center it */
+  margin-top: 2%;
+  margin-bottom: 2%;
 }

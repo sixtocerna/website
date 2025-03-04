@@ -16,7 +16,6 @@ format:
   y en sus aplicaciones en empresas
 </p>
 
-<p class="hero-text">Actualmente completando una maestría en Inteligencia Artificial en Université Paris Cité</p>
 
 </div>
 
@@ -38,7 +37,7 @@ format:
 ```{=html}
 <div class="content-section">
   <p>
-  Me llamo Sixto Cerna, soy de El Salvador 🇸🇻 y estoy realizando mis estudios en París 🇫🇷. He trabajado en startups y en laboratorios de Inteligencia Artificial (IA) en LATAM y Francia. <br>
+  Me llamo Sixto Cerna, soy de El Salvador y estoy realizando mis estudios en París. He trabajado en startups y en laboratorios de Inteligencia Artificial (IA) en LATAM y Francia. <br>
   Creo que hay muy poca información en español que aborde el tema de la IA. Mi objetivo es compartir proyectos que 1) eduquen acerca de cómo funciona la IA y 2) contribuyan a que haya más personas capaces de identificar oportunidades con esta tecnología. 
   </p>
 
@@ -68,6 +67,8 @@ format:
       <p class="field">Matemáticas e Informática</p>
     </div>
   </div>
+
+  <hr class="separator">
 
   <div class="education-experience-entry">
     <div class="logo-container">
@@ -105,6 +106,8 @@ format:
     </div>
   </div>
 
+  <hr class="separator">
+
   <div class="education-experience-entry">
     <div class="logo-container">
       <img src="assets/tripartie_logo.png" alt="Tripartie Logo" class="logo">
@@ -119,7 +122,9 @@ format:
     </div>
   </div>
 
-    <div class="education-experience-entry">
+  <hr class="separator">
+
+  <div class="education-experience-entry">
     <div class="logo-container">
       <img src="assets/ens_logo.png" alt="ENS Logo" class="logo">
     </div>
@@ -153,6 +158,8 @@ format:
     </div>
   </div>
 
+  <hr class="separator">
+
   <div class="education-experience-entry">
     <div class="logo-container">
       <img src="assets/LXAI_logo.png" alt="LXAI logo" class="logo">
@@ -166,7 +173,9 @@ format:
     </div>
   </div>
 
-    <div class="education-experience-entry">
+  <hr class="separator">
+
+  <div class="education-experience-entry">
     <div class="logo-container">
       <img src="assets/aefe_logo.png" alt="AEFE logo" class="logo">
     </div>
