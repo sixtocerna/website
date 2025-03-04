@@ -1,24 +1,10 @@
 [
   {
-    "objectID": "blog/posts/tests.html",
-    "href": "blog/posts/tests.html",
-    "title": "My First Blog Post",
-    "section": "",
-    "text": "This is my first blog post in Quarto! 🎉"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
     "objectID": "blog/index.html",
     "href": "blog/index.html",
-    "title": "My Blog",
+    "title": "Blog",
     "section": "",
-    "text": "Welcome to my blog! Here you’ll find my latest posts.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nMy First Blog Post\n\n\n\n\n\n\nTech\n\n\nPersonal\n\n\n\n\n\n\n\n\n\nFeb 21, 2025\n\n\nYour Name\n\n\n\n\n\n\nNo matching items"
+    "text": "No matching items"
   },
   {
     "objectID": "index.html",
@@ -26,12 +12,5 @@
     "title": "SC",
     "section": "",
     "text": "Hola, soy Sixto\n\n\nTrabajo en Inteligencia Artificial y en sus aplicaciones en empresas\n\n\n\n        \n\nAcerca de mí\n\n  \n  Me llamo Sixto Cerna, soy de El Salvador y estoy realizando mis estudios en París. He trabajado en startups y en laboratorios de Inteligencia Artificial (IA) en LATAM y Francia. \n  Creo que hay muy poca información en español que aborde el tema de la IA. Mi objetivo es compartir proyectos que 1) eduquen acerca de cómo funciona la IA y 2) contribuyan a que haya más personas capaces de identificar oportunidades con esta tecnología. \n  \n\n  \n  P.D. Busco empresas (cualquier tamaño) que estén interesadas en utilizar análisis de datos y/o IA para un proyecto. Si esto les llama la atención, pueden contactarme aquí.\n  \n\n\nEducación\n\n\n  \n    \n      \n    \n    \n       Université PSL - Lycée Henri IV\n      Septiembre 2020 - Junio 2023\n      Paris\n    \n    \n      Ciclo Pluridisciplinario de Estudios Superiores (CPES)\n      Matemáticas e Informática\n    \n  \n\n  \n\n  \n    \n      \n    \n    \n      Université Paris Cité\n      Septiembre 2024 - Junio 2026\n      Paris\n    \n    \n      Maestría en Matemáticas e Informática\n      Inteligencia Articifial\n    \n  \n\n\n\nExperiencia profesional\n\n  \n    \n      \n    \n    \n      Kalto\n      Septiembre 2023 - Marzo 2024\n      Mexico (Remoto)\n    \n    \n      Científico de Datos\n    \n  \n\n  \n\n  \n    \n      \n    \n    \n      Tripartie\n      Julio 2022 - Agosto 2022\n      Paris\n    \n    \n      Pasante en Inteligencia Artificial\n    \n  \n\n  \n\n  \n    \n      \n    \n    \n      ENS Ulm\n      Enero 2022 - Julio 2022\n      Paris\n    \n    \n      Pasante en investigación en Inteligencia Artificial\n    \n  \n\n\nOtros\n\n  \n    \n      \n    \n    \n      Makers Fellowship (MF3)\n      Julio 2023 - Deciembre 2023\n    \n    \n      Business Fellow\n    \n  \n\n  \n\n  \n    \n      \n    \n    \n      LatinX in AI\n      Septiembre 2023 - Diciembre 2023\n    \n    \n      Mentorías en IA\n    \n  \n\n  \n\n  \n    \n      \n    \n    \n      AEFE\n      Junio 2020\n    \n    \n      Beca completa para estudios unviersitarios en Francia"
-  },
-  {
-    "objectID": "index.html#i-work-on-artificial-intelligence-and-its-business-applications",
-    "href": "index.html#i-work-on-artificial-intelligence-and-its-business-applications",
-    "title": "Home",
-    "section": "",
-    "text": "Currently completing a Master’s Degree in Data Science and working on an AI course in Spanish.\n\n\n\nCreating value with technology\nI believe that every business can make better decisions by understanding and leveraging the power of data. By using data analysis and AI, I provide businesses with actionable insights on how to improve products, services, and strategies, setting the stage for sustainable growth.\nI’m offering a free customer behavior report, giving you a firsthand look at how data can reveal ways to strengthen your business.\nContact me {.contact-button}"
   }
 ]

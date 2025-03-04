@@ -1,5 +1,5 @@
 ---
-title: "My Blog"
+title: "Blog"
 listing:
   contents: posts
   type: default
@@ -9,5 +9,3 @@ listing:
   filter-ui: true
 page-layout: full
 ---
-
-Welcome to my blog! Here you’ll find my latest posts.
