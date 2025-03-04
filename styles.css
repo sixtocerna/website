@@ -27,13 +27,12 @@ body {
 }
 
 .orange-highlight {
-    font-weight: bold;
-    color: #e87c1a;
-    text-decoration: underline;
-    text-decoration-thickness: 0.15em; /* Adjust thickness */
-    text-decoration-color: rgba(232, 124, 26, 0.3); /* Match highlight color */
-    text-underline-offset: 4px; /* Move the underline lower */
-    text-decoration-skip-ink: none;
+  font-weight: bold;
+  color: #e87c1a;
+  background: linear-gradient(to right, rgba(232, 124, 26, 0.3) 0%, rgba(232, 124, 26, 0.3) 100%);
+  background-size: 100% 0.15em;
+  background-position: 0 calc(100% - 2px);
+  background-repeat: no-repeat;
 }
 
 .hero-text {
