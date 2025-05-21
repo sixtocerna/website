@@ -3,45 +3,47 @@ title: '¿Qué es la inteligencia artificial? – de cero'
 image: 'image.jpg'
 ---
 
-De manera informal, la Inteligencia Artificial (IA) corresponde a los sistemas capaces de realizar tareas que uno no se esperaría que una computadora pueda hacer. El ejemplo estelar es ChatGPT. Antes de su aparición, nadie se imaginaba que las computadoras pudieran escribir ensayos. Si bien las computadoras ya eran mejores que nosotros en ciertas tareas como calcular el resultado de multiplicaciones, redactar un ensayo es un tipo de tarea muy diferente. Para realizar un cálculo, basta repetir una serie de instrucciones básicas (las mismas que vimos en primaria para sumar, restar, dividir, etc.) pero escribir un ensayo no es una tarea que se resuelve con instrucciones exactas. Además, hay muchas más tareas para las cuales no existe un manual de instrucciones y estas son las cosas en las que los humanos somos buenos y las computadoras no tanto. Por ejemplo, no hay un manual para ser creativo ya que ser creativo es justamente lo opuesto de seguir un manual de instrucciones. Entonces, ¿cómo podemos lograr que una computadora realice tareas que no se pueden lograr siguiendo un conjunto de reglas fijas? Esto es lo que resuelve la IA. 
+De manera informal, la Inteligencia Artificial (IA) corresponde a los sistemas capaces de realizar tareas que uno no se esperaría que una computadora pueda hacer. El ejemplo estelar es ChatGPT. Antes de su aparición, nadie se imaginaba que las computadoras pudieran escribir ensayos. Aunque las computadoras ya nos superaban en ciertas tareas como en el cálculo de multiplicaciones, redactar un ensayo es un tipo de tarea muy diferente. Mientras que para realizar un cálculo basta con repetir una serie de instrucciones básicas (las mismas que vimos en primaria para sumar, restar, dividir, etc.), no se logra escribir un ensayo siguiendo instrucciones exactas. De hecho, muchos problemas no se resuelven siguiendo un manual de instrucciones. Hasta ahora, estas han sido las cosas en las que los humanos hemos sido mejores que las computadoras. Por ejemplo, no hay un manual para ser creativo ya que ser creativo es justamente lo opuesto de seguir un manual de instrucciones. Entonces, ¿cómo podemos lograr que una computadora realice tareas que no se pueden lograr siguiendo un conjunto de reglas fijas? Esto es lo que resuelve la IA. 
 En este artículo voy a hablar de qué es la inteligencia artificial y de cómo funciona.
 
-Los carros autónomos son un caso de uso interesante para definir la inteligencia artificial. Estos carros tienen que ser capaces de reaccionar frente a obstáculos nuevos (como un objeto que nunca han visto) pero también tienen que funcionar en entornos nuevos (como una avenida que recién se construyó). Y esta es una característica fundamental de los sistemas de inteligencia artificial : a pesar de no haber sido programados explícitamente para gestionar cada contexto posible, saben hacerlo. El carro que se maneja solo, a pesar de nunca haber sido programado explícitamente para reaccionar a un objeto nuevo o conducir en una calle que nunca ha visto, sabe hacerlo. 
-De manera general, lo que distingue un sistema tradicional de un sistema que usa IA es su capacidad a continuar funcionando a pesar de enfrentarse a un contexto o entorno desconocido. El término de “inteligencia” en inteligencia artificial viene de esta capacidad de generalizar lo que ha visto antes para aplicarlo a situaciones nuevas. 
+Escribiendo este artículo me di cuenta que nunca había escuchado una definición de IA con la que quedara satisfecho. La clásica de "sistemas que imitan la inteligencia humana" siempre me pareció extremedamente vaga y no aclaraba nada. Era la misma frustración de buscar en el diccionario la definición de "zafio" y leer "propio o característico de la persona zafia". Del otro lado del espectro, las definiciones más formales o precisas se sentían demasiado técnicas. Entre tantos detalles, identificar la idea general se hacía difícil. Era el equivalente de describir un carro como "vehículo automotor terrestre de cuatro ruedas con motor de combustión interna y transmisión mecánica o automática" en lugar de "un modo de transporte". 
+A pesar de nunca haber buscado la definición exacta de "carro", todos tenemos una idea bastante clara de lo que es. Y esta idea nos la formamos a partir de los carros que en algún momento vimos y dijimos "ah, _eso_ es un carro". Fue un proceso de inducción : a partir de casos concretos inferimos reglas generales. A mi parecer, este método aclara mucho mejor qué es la IA. 
 
-Para mí, la IA corresponde a los sistemas capaces de lidiar con casos para los cuales no han sido explícitamente programados de gestionar. Los siguientes ejemplos ilustran esta definición. 
+Los carros autónomos son un buen punto de partida para definir la IA. Estos carros tienen que ser capaces de reaccionar frente a obstáculos nuevos (como un objeto que nunca han visto) pero también tienen que funcionar en entornos nuevos (como una avenida que recién se construyó). Y esta es una característica fundamental de los sistemas de inteligencia artificial : a pesar de no haber sido programados explícitamente para gestionar cada contexto posible, saben hacerlo. El carro que se maneja solo, a pesar de nunca haber sido programado explícitamente para reaccionar a un objeto nuevo o conducir en una calle que nunca ha visto, sabe hacerlo. 
+De manera general, lo que distingue un sistema tradicional de un sistema que usa IA es su capacidad a continuar funcionando a pesar de enfrentarse a un contexto o entorno desconocido. El término de “inteligencia” en inteligencia artificial viene de esta capacidad de generalizar o extrapolar experiencias previas a escenarios nuevos. 
+
+Para mí, la IA corresponde a los sistemas capaces de lidiar con casos para los cuales no han sido explícitamente programados de gestionar. Podemos ver este mismo patrón en otros ejemplos. 
 
 **Sistemas de recomendación** 
 
-Los sistemas de recomendación de Youtube, TikTok e Instagram permiten que el nuevo contenido que se va subiendo sea sugerido a los usuarios correctos. Esto se traduce en el hecho que Instagram y Tiktok reconocen los nuevos “trends” que nos gustan y en que Youtube nos sugiere nuevas canciones o nuevos artistas que podrían gustarnos. Si estas plataformas no pudieran recomendar el nuevo contenido, eventualmente los usuarios se aburrirían de ver lo mismo y la abandonarían. Por ello, es crucial tener sistemas capaces de recomendar las nuevas fotos, los nuevos trends, los nuevos videos, las nuevas canciones, etc. especialmente en las plataformas donde hay contenido nuevo constantemente. Nadie pasaría tanto tiempo en Tiktok e Instagram recomendando memes del COVID en 2020 en lugar de “lo mejor nunca se sube”, “la focking vibra”, etc.  
+Los sistemas de recomendación de Youtube, TikTok e Instagram permiten que el nuevo contenido que se va subiendo sea sugerido a los usuarios correctos. Esto se traduce en el hecho que Instagram y Tiktok reconocen los _nuevos_ “trends” que nos gustan y en que Youtube nos sugiere _nuevas_ canciones o _nuevos_ artistas que podrían gustarnos. Si estas plataformas no pudieran recomendar el contenido nuevo, eventualmente los usuarios se aburrirían de ver lo mismo y la abandonarían. Por ello, es crucial tener sistemas capaces de recomendar las _nuevas_ fotos, los _nuevos_ trends, los _nuevos_ videos, las _nuevas_ canciones, etc. especialmente en las plataformas donde hay contenido nuevo constantemente. Nadie pasaría tanto tiempo en Tiktok e Instagram si siguieran recomendando memes de 2020 sobre el COVID en lugar de los trends más recientes como “lo mejor nunca se sube”, “la focking vibra”, etc.  
 
 **Detección de fraudes** 
 
-La IA también es utilizada por diferentes empresas como Stripe para detectar casos de fraude. Si estos sistemas no fueran capaces de alertar sobre nuevos actores fraudulentos no tendrían mucho valor, ya que el problema es que estos actores utilizan nuevas identidades falsas, con nuevos métodos, desde nuevos lugares, etc. El éxito de estos sistemas depende de su capacidad de reconocer casos sospechosos a pesar de no ser iguales que los anteriores. 
-
+La IA también es utilizada por diferentes empresas como Stripe para detectar casos de fraude. Si estos sistemas no fueran capaces de alertar sobre nuevos actores fraudulentos no tendrían mucho valor, ya que el problema es que estos actores utilizan _nuevas_ identidades falsas, con _nuevos_ métodos, desde _nuevos_ lugares, etc. El éxito de estos sistemas depende de su capacidad de reconocer casos sospechosos a pesar de no ser iguales que los anteriores. 
 
 **Asistentes de voz** 
 
-Es difícil imaginar que alguien enumeró todas las maneras en las cuales se le puede pedir a un asistente que cree una alarma para el día siguiente. Por ejemplo: 
-“Despiértame mañana a las 7.”
-“Quiero una alarma a las 7 de la mañana.”
-“Programa una alarma para las 7 am de mañana.”
-“Pon una alarma para mañana temprano, a las siete.”
-“Necesito que me levantes a las 7 mañana.”
-“Haz que suene una alarma a las siete de la mañana.”
-“Activa una alarma mañana a las 7.”
-“Pon el despertador para mañana a las 7.”
-“Asegúrate de que haya una alarma a las 7 am mañana.”
-“Configura una alarma para mañana a primera hora, a las 7.”
-Y la lista puede seguir, hay muchas maneras más. La utilidad de un asistente de voz depende en su capacidad de entender la intención del usuario, incluso si el usuario expresa su intención de una manera totalmente nueva. La IA es lo que permite que los asistentes de voz entiendan la intención del usuario independientemente de cómo el usuario formule lo que necesita. 
+| Es difícil imaginar que alguien enumeró todas las maneras en las cuales se le puede pedir a un asistente que cree una alarma para el día siguiente. Por ejemplo: 
+|   “Despiértame mañana a las 7.”
+|   “Quiero una alarma a las 7 de la mañana.”
+|   “Programa una alarma para las 7 am de mañana.”
+|   “Pon una alarma para mañana temprano, a las siete.”
+|   “Necesito que me levantes a las 7 mañana.”
+|   “Haz que suene una alarma a las siete de la mañana.”
+|   “Activa una alarma mañana a las 7.”
+|   “Pon el despertador para mañana a las 7.”
+|   “Asegúrate de que haya una alarma a las 7 am mañana.”
+|   “Configura una alarma para mañana a primera hora, a las 7.”
+Y la lista puede seguir, hay muchas maneras más. La utilidad de un asistente de voz depende de su capacidad de entender la intención del usuario, incluso si el usuario expresa su intención de una manera totalmente _nueva_. La IA es lo que permite que los asistentes de voz entiendan la intención del usuario independientemente de cómo el usuario formule lo que necesita. 
 
 **Filtros de spam** 
 
-Los filtros que tenemos en nuestros correos usan IA para redirigir correos no deseados a una carpeta de “spam”. Estos filtros clasifican correctamente la gran mayoría de mensajes de spam incluso si vienen de cuentas nuevas y si están redactados de nuevas maneras. 
+Los filtros que tenemos en nuestros correos usan IA para redirigir correos no deseados a una carpeta de “spam”. Estos filtros clasifican correctamente la gran mayoría de mensajes de spam incluso si vienen de cuentas _nuevas_ y si están redactados de _nuevas_ maneras. 
 
 Ahora la siguiente pregunta, es ¿cómo creamos estos sistemas? 
 
-El objetivo de este documento no es dar una taxonomía exhaustiva de todos tipos de IA que existen y de cómo funciona cada uno, sino dar la idea general para que cualquier persona pueda entender. 
+El objetivo de este documento no es dar una taxonomía exhaustiva de todos tipos de IA que existen y de como funciona cada uno, sino dar la idea general para que cualquier persona pueda entender. 
 
 Imaginemos que queremos construir un sistema de IA capaz de decidir si un correo es “spam” o no. Nuestro objetivo es que este sistema clasifique correctamente la mayor cantidad posible de correos. Queremos clasificar los correos que son spam como “spam” y los mensajes reales como “no spam” (no queremos que correos importantes lleguen accidentalmente a la carpeta incorrecta).
 
@@ -55,13 +57,13 @@ Para crear nuestro sistema comenzamos con tres ejemplos :
 
 Para entender un sistema de IA es crucial entender tres elementos : el modelo, los parámetros y el algoritmo de entrenamiento.
 
-Podemos ver un modelo como una plantilla para tomar decisiones. Una plantilla tiene ciertos elementos fijos y otros que se pueden modificar. Los parámetros son los elementos del modelo que se pueden modificar. El algoritmo de entrenamiento es un manual que describe cómo modificar los parámetros para aumentar el número de respuestas correctas que el modelo genera. 
+Podemos ver un modelo como una plantilla para tomar decisiones. Una plantilla tiene ciertos elementos fijos y otros que se pueden modificar. Los parámetros son los elementos del modelo que se pueden modificar. El algoritmo ^[Un algoritmo es una lista de instrucciones] de entrenamiento es un manual que describe cómo modificar los parámetros para aumentar el número de respuestas correctas que el modelo genera. 
 
 Tomemos el ejemplo de un modelo de árbol de decisión. Un árbol de decisión es como un cuestionario con preguntas sí/no, donde cada respuesta lleva a otra pregunta o a una conclusión (“spam” o “no spam”).
 
-Aquí presento de manera simplificada cómo se vería un algoritmo de entrenamiento. Nuestro objetivo es a cada etapa modificar nuestro modelo para aumentar el número de respuestas correctas. 
+Aquí presento de manera simplificada cómo se vería un algoritmo de entrenamiento. A cada etapa nuestro objetivo es modificar nuestro modelo para aumentar el número de respuestas correctas. 
 
-Primera etapa del algoritmo: Ya que casi todos los correos de spam contienen la palabra “felicidades”, si vemos esta palabra lo clasificaremos como “spam”. 
+[Primera etapa del algoritmo]{.underline}: Ya que casi todos los correos de spam contienen la palabra “felicidades”, si vemos esta palabra lo clasificaremos como “spam”. 
 
 ```{mermaid}
 flowchart TD
@@ -71,7 +73,7 @@ flowchart TD
 
 En este caso, vamos a clasificar el mensaje “Felicidades por tu cumpleaños” como “spam”, lo cual es incorrecto. 
 
-Segunda etapa del algoritmo: Corregimos los errores de la parte anterior. Los correos que tienen solo “felicidades” y no “dinero” no suelen ser “spam”, mientras que los correos que tienen “felicidades” y “dinero” si suelen ser spam. Así definimos la siguiente regla : si tienen la palabra “felicidades” y “dinero” los clasificaremos como “spam”. 
+[Segunda etapa del algoritmo]{.underline}: Corregimos los errores de la parte anterior. Los correos que tienen solo “felicidades” y no “dinero” no suelen ser “spam”, mientras que los correos que tienen “felicidades” y “dinero” si suelen ser spam. Así definimos la siguiente regla : si tienen la palabra “felicidades” y “dinero” los clasificaremos como “spam”. 
 
 ```{mermaid}
 flowchart TD
@@ -84,7 +86,7 @@ flowchart TD
 
 Pero en ese caso el mensaje “Hola sobrino, felicidades por tu cumpleaños! Te mando un abrazo y un sobre con dinero” va a ser incorrectamente clasificado como “spam”. 
 
-Tercera etapa del algoritmo : Para corregir este último error, si encontramos las palabras “ganaste”, “dinero” y “felicidades” vamos a clasificar el mensaje como “spam”. 
+[Tercera etapa del algoritmo]{.underline} : Para corregir este último error, si encontramos las palabras “ganaste”, “dinero” y “felicidades” vamos a clasificar el mensaje como “spam”. 
 
 ```{mermaid}
 flowchart TD
@@ -100,13 +102,13 @@ Ahora, si recibimos un nuevo correo que diga “¡felicidades por tu graduación
 
 Esto muestra, cómo a partir de algunos ejemplos podemos crear un sistema capaz de identificar patrones y de aplicarlos a casos nunca antes vistos. 
 
-Es importante insistir en que es un proceso iterativo, es decir que se hace en varias etapas. En cada etapa ajustamos los parámetros (en este caso, las palabras clave y combinaciones) para mejorar las respuestas del modelo. Otro detalle importante es que supimos que modificar porque teníamos de antemano ejemplos de respuestas correctas. Sin ellas, no hubiéramos tenido nada con que comparar y no hubiéramos sabido qué parámetros cambiar para aumentar el número de respuestas correctas. 
+Es importante insistir en que es un proceso iterativo, es decir que se hace en varias etapas. En cada etapa ajustamos los parámetros (en este caso, las palabras clave y combinaciones) para mejorar las respuestas del modelo. Otro detalle importante es que supimos que modificar porque teníamos de antemano ejemplos de respuestas correctas. Sin ellas, no hubiéramos tenido nada con que comparar y no hubiéramos sabido que parámetros cambiar para aumentar el número de respuestas correctas. 
 
-Es de notar también que las dificultades “técnicas” para entender la IA se encuentran en la parte del entrenamiento. La primera dificultad está en la concepción de los algoritmos de entrenamiento: ¿cómo definimos una serie de etapas que nos ayuden a encontrar los buenos parámetros?. La segunda dificultad es el lado práctico : ¿estos algoritmos van a funcionar en la práctica? Podríamos crear un algoritmo que funciona bien en teoría pero que en la práctica tarda años en ejecutarse. Un ejemplo sería probar todas las combinaciones posibles de palabras para detectar si un correo es spam o no. 
+Es de notar también que las dificultades “técnicas” para entender la IA se encuentran en la parte del entrenamiento. La primera dificultad está en la concepción de los algoritmos de entrenamiento: ¿cómo definimos una serie de etapas que nos ayuden a encontrar los buenos parámetros? La segunda dificultad es el lado práctico : ¿estos algoritmos van a funcionar en la práctica? Podríamos crear un algoritmo que funciona bien en teoría pero que en la práctica tarda años en ejecutarse. Un ejemplo sería probar todas las combinaciones posibles de palabras para detectar si un correo es spam o no. 
 
-Para responder a las preguntas iniciales : la IA corresponde a los sistemas capaces de gestionar casos para los que no han sido explícitamente programados de gestionar. Para crear estos sistemas, se necesita un modelo y un algoritmo. Comparando los resultados generados por modelo con las respuestas correctas, el algoritmo modifica progresivamente los parámetros para maximizar el número de respuestas correctas generadas. 
+Para responder a las preguntas iniciales : la IA corresponde a los sistemas capaces de gestionar casos para los que no han sido explícitamente programados de gestionar. Para crear estos sistemas, se necesita un modelo y un algoritmo. Comparando los resultados generados por el modelo con las respuestas correctas, el algoritmo modifica progresivamente los parámetros para maximizar el número de respuestas correctas generadas. 
 
-Hice muchas simplificaciones y omití ciertos conceptos que no me parecen esenciales para una entender la idea general de la IA. Sin embargo, para cualquier duda mi correo está en mi sitio web, y espero poco a poco ir agregando contenido acerca de las cosas que no mencioné aquí. 
+Hice muchas simplificaciones y omití ciertos conceptos que no me parecen esenciales para entender la idea general de la IA. Sin embargo, para cualquier duda mi correo está en mi sitio web, y espero poco a poco ir agregando contenido acerca de las cosas que no mencioné aquí. 
 
 ![](meme.jpg){width=50%, fig-align="center"}
 
