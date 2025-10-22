@@ -1,0 +1,83 @@
+---
+title: '¿Cómo funciona ChatGPT? - Parte I'
+---
+
+El objetivo de esta serie de blogs es explicar de manera simple cómo funciona ChatGPT. Quiero que cualquier persona se pueda hacer una idea de cómo funciona, incluso sin haber hecho matemáticas, informática, etc. 
+
+
+Antes de empezar quiero dejar claro algo: ChatGPT es un producto y no una tecnología. La tecnología detrás de ChatGPT se llama “LLM” (para Large Language Models en inglés). De la misma manera que existen otros motores de búsqueda que no son Google como Yahoo, Bing, etc., existen otros LLMs que no son ChatGPT. A diferencia de los motores de búsqueda, cada variante de LLM tiene sus ventajas y desventajas. La mayoría de personas usa Google por puro hábito, pero objetivamente Google no es muy diferente de los otros motores de búsqueda. Este no es el caso de los LLMs : algunos LLMs son mucho mejores programando, otros son mucho mejores en tareas creativas, otros son mucho mejores para analizar imágenes, etc. De ahora en adelante hablaré de LLMs para referirme a cualquier sistema que funciona como ChatGPT para hacer énfasis en que ChatGPT no es siempre la solución y que según el caso hay otras variantes de LLMs que funcionarán mejor. 
+
+Como lo indica su nombre, un _modelo_ extenso de lenguaje  (o LLM en inglés) es una manera de _modelizar_ el lenguaje que nosotros, los humanos,  utilizamos. En una frase, un LLM es un modelo que aprende a predecir la palabra siguiente. Todos hemos visto las sugerencias encima de los teclados de nuestros teléfonos. Cuando escribimos “Hol” el teléfono nos sugiere “Hola” porque es lo más probable que escribamos después de “Hol”. Un LLM hace lo mismo pero a una escala más grande. En lugar de predecir una sola letra como “a” al final de “Hola”, los LLMs pueden predecir palabras enteras basándose en oraciones enteras. 
+
+A pesar de parecer una manera simplista de representar nuestro lenguaje, esta manera de abordar el problema de modelización ha sido extremadamente exitosa. Una de las razones está en la primera "L" de LLM que corresponde a "Large" es decir extenso o grande. Estos modelos son extensos/grandes en varios aspectos:
+
+1. Tamaño: estos modelos pueden llegar a pesar más de 500GB. Para utilizarlos no bastan computadoras “normales” ya que estas no tienen la potencia de cálculo ni el espacio necesario.  
+2. Tiempo de desarrollo: durante varias semanas, miles de computadoras en “data centers” corren día y noche para encontrar los billones de parámetros que mejoran la calidad de los resultados producidos por el modelo. 
+3. Contexto: mencionamos que estos modelos predicen una palabra siguiente en función de las palabras anteriores. Algunos modelos pueden llegar a usar alrededor de 200 mil palabras para predecir la palabra que sigue. 
+
+
+Si tuviéramos que adivinar lo que sigue después de "Hola", algunas opciones son
+
+- “Hola” si otra persona responde
+- "!" si queremos expresar emoción
+- "Qué" si queremos preguntar qué tal
+
+Si tuviéramos que adivinar lo que sigue después de "Hola, ¿cómo", algunas opciones son
+
+- "Hola, ¿cómo estás?" 
+- “Hola, ¿cómo vas?”
+- "Hola, ¿cómo estuvo ..." 
+
+Si tuviéramos que adivinar lo que sigue después de "Hola, ¿cómo estuvo", algunas opciones son
+
+- "Hola, ¿cómo estuvo el almuerzo?"
+- "Hola, ¿cómo estuvo la fiesta?"
+- etc.
+
+
+Por lo general, a medida que aumentamos el tamaño del contexto el número de palabras posibles se va reduciendo, y predecir la palabra siguiente se vuelve más fácil. Teniendo 200 mil palabras de contexto es concebible que estos modelos generen texto similar al que un humano produce. 
+
+Durante muchos años, las tareas de procesamiento de lenguaje eran tratados como problemas separados. Es decir que cada tarea se intentaba resolver con un modelo específico. Por ejemplo, había modelos capaces de hacer traducción pero incapaces de resumir textos, los modelos capaces de entender el tono de un texto (positivo o negativo por ejemplo) no eran capaces de responder preguntas, etc. Los LLMs permitieron tener un modelo único que sirva para una gran variedad de tareas simultáneamente. Por esta razón se habla de “foundational models” o modelos fundacionales, porque son modelos que sirven de base para resolver varios problemas simultáneamente.  
+
+En resumen, los LLMs son modelos que aprenden a predecir la palabra más probable en función de palabras previas. A pesar de ser una modelización simple, la escala es el factor crucial que permite obtener resultados de tan buena calidad. Cómo crear un modelo que sea bueno prediciendo la palabra siguiente es el tema más técnico, pero en resumen sigue el mismo patrón que expliqué [aquí](../05-05-2025/05-05-2025.qmd) : tomamos una serie de textos, predecimos la palabra siguiente para cada texto y comparamos con la palabra real que seguía, luego modificamos los parámetros del modelo para maximizar el número las respuestas correctas y repetimos. Haré un blog explicando los detalles técnicos de esto más adelante, pero por el momento esta idea general es suficiente. 
+
+Hasta ahora solo tenemos un modelo que predice la palabra siguiente, no una oración entera. Para generar oraciones enteras el procedimiento es bastante simple: Un usuario ingresa una oración inicial como “¿Cuál es la capital de Francia?”. Luego, el LLM predice la palabra siguiente más probable como “La”. Después, tomamos la oración original, le agregamos la predicción “La” y volvemos a pasarla por el LLM para predecir otra palabra. Repetimos este proceso y progresivamente obtenemos una oración que responde a nuestra pregunta. 
+
+**Etapa 1:**
+
+- Entrada LLM: “¿Cuál es la capital de Francia?”
+- Salida LLM: “**La**”
+
+**Etapa 2:**
+
+- Entrada LLM: “¿Cuál es la capital de Francia? **La** ”
+- Salida LLM: “**capital**”
+
+**Etapa 3:**
+
+- Entrada LLM: “¿Cuál es la capital de Francia? **La capital**”
+- Salida LLM: “**de**”
+
+**Etapa 4:**
+
+- Entrada: “¿Cuál es la capital de Francia? **La capital de**”
+- Salida: “**Francia**”
+
+**Etapa 5:**
+
+- Entrada: “¿Cuál es la capital de Francia? **La capital de Francia**”
+- Salida: “**es**”
+
+**Etapa 6:**
+
+- Entrada: “¿Cuál es la capital de Francia? **La capital de Francia es**”
+- Salida: “**París**”
+
+Espero que este ejemplo ilustre que no hay ningún tipo de razonamiento o consciencia que entra en juego a la hora de generar una respuesta. 
+
+Al entender este mecanismo podemos explicar ciertos comportamientos de los LLMs. Primero, que un LLM diga algo que es falso pretendiendo que es verdadero es bastante común. Esto ocurre porque para responder a una pregunta el LLM genera la secuencia de palabras más probable y esto no garantiza que la respuesta sea correcta. Por ejemplo, si le preguntamos quién fue el primer alcalde de Santa Tecla, el LLM puede generar "José Martínez (1987-1991)" simplemente porque José es un nombre frecuente y Martínez es un apellido común también, y eso basta para que sea una respuesta probable. 
+Segundo, esto también explica porqué los LLMs a veces fallan en razonamientos simples de matemática. Para hacer una multiplicación, los LLMs no realizan las etapas que aprendimos en primaria (que asegura que el resultado sea correcto), sino que predicen el resultado. Estos comportamientos se hacen menos frecuentes con la llegada del uso de herramientas como el acceso a una calculadora o a internet y nuevos métodos de entrenamiento como Reinforcement Learning. Sin embargo, el mecanismo sigue siendo el mismo. Incluso en el modo “razonamiento” se sigue prediciendo una palabra a la vez. Los LLMs son extremadamente útiles pero no tenemos que olvidar que por detrás no hay nada más que la predicción de la palabra más probable. 
+
+Para crear algo similar a ChatGPT es importante que las respuestas sean similares a las de una conversación y que responda como un “asistente”. Nos gustaría tener respuestas más cercanas a “Necesitas que busque más información acerca de X?”, “Dime si tienes más dudas acerca de X!”, etc. en lugar de parrafos que se parezcan a lo que podríamos ver en Wikipiedia por ejemplo. En el próximo blog explicaré cómo lograr este estilo conversacional y para eso explicaré qué son los “tokens” y aclararé algunas simplificaciones que hice. 
+
+Sixto :) 

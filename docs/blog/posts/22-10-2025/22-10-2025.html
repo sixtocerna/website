@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Test primer blog – SC</title>
+<title>¿Cómo funciona ChatGPT? - Parte I – SC</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -149,7 +115,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Test primer blog</h1>
+<h1 class="title">¿Cómo funciona ChatGPT? - Parte I</h1>
 </div>
 
 
@@ -166,15 +132,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div id="cell-2" class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> time</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>time.sleep(<span class="dv">120</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Hello world'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Hello world</code></pre>
-</div>
-</div>
+<p>El objetivo de esta serie de blogs es explicar de manera simple cómo funciona ChatGPT. Quiero que cualquier persona se pueda hacer una idea de cómo funciona, incluso sin haber hecho matemáticas, informática, etc.</p>
+<p>Antes de empezar quiero dejar claro algo: ChatGPT es un producto y no una tecnología. La tecnología detrás de ChatGPT se llama “LLM” (para Large Language Models en inglés). De la misma manera que existen otros motores de búsqueda que no son Google como Yahoo, Bing, etc., existen otros LLMs que no son ChatGPT. A diferencia de los motores de búsqueda, cada variante de LLM tiene sus ventajas y desventajas. La mayoría de personas usa Google por puro hábito, pero objetivamente Google no es muy diferente de los otros motores de búsqueda. Este no es el caso de los LLMs : algunos LLMs son mucho mejores programando, otros son mucho mejores en tareas creativas, otros son mucho mejores para analizar imágenes, etc. De ahora en adelante hablaré de LLMs para referirme a cualquier sistema que funciona como ChatGPT para hacer énfasis en que ChatGPT no es siempre la solución y que según el caso hay otras variantes de LLMs que funcionarán mejor.</p>
+<p>Como lo indica su nombre, un <em>modelo</em> extenso de lenguaje (o LLM en inglés) es una manera de <em>modelizar</em> el lenguaje que nosotros, los humanos, utilizamos. En una frase, un LLM es un modelo que aprende a predecir la palabra siguiente. Todos hemos visto las sugerencias encima de los teclados de nuestros teléfonos. Cuando escribimos “Hol” el teléfono nos sugiere “Hola” porque es lo más probable que escribamos después de “Hol”. Un LLM hace lo mismo pero a una escala más grande. En lugar de predecir una sola letra como “a” al final de “Hola”, los LLMs pueden predecir palabras enteras basándose en oraciones enteras.</p>
+<p>A pesar de parecer una manera simplista de representar nuestro lenguaje, esta manera de abordar el problema de modelización ha sido extremadamente exitosa. Una de las razones está en la primera “L” de LLM que corresponde a “Large” es decir extenso o grande. Estos modelos son extensos/grandes en varios aspectos:</p>
+<ol type="1">
+<li>Tamaño: estos modelos pueden llegar a pesar más de 500GB. Para utilizarlos no bastan computadoras “normales” ya que estas no tienen la potencia de cálculo ni el espacio necesario.<br>
+</li>
+<li>Tiempo de desarrollo: durante varias semanas, miles de computadoras en “data centers” corren día y noche para encontrar los billones de parámetros que mejoran la calidad de los resultados producidos por el modelo.</li>
+<li>Contexto: mencionamos que estos modelos predicen una palabra siguiente en función de las palabras anteriores. Algunos modelos pueden llegar a usar alrededor de 200 mil palabras para predecir la palabra que sigue.</li>
+</ol>
+<p>Si tuviéramos que adivinar lo que sigue después de “Hola”, algunas opciones son</p>
+<ul>
+<li>“Hola” si otra persona responde</li>
+<li>“!” si queremos expresar emoción</li>
+<li>“Qué” si queremos preguntar qué tal</li>
+</ul>
+<p>Si tuviéramos que adivinar lo que sigue después de “Hola, ¿cómo”, algunas opciones son</p>
+<ul>
+<li>“Hola, ¿cómo estás?”</li>
+<li>“Hola, ¿cómo vas?”</li>
+<li>“Hola, ¿cómo estuvo …”</li>
+</ul>
+<p>Si tuviéramos que adivinar lo que sigue después de “Hola, ¿cómo estuvo”, algunas opciones son</p>
+<ul>
+<li>“Hola, ¿cómo estuvo el almuerzo?”</li>
+<li>“Hola, ¿cómo estuvo la fiesta?”</li>
+<li>etc.</li>
+</ul>
+<p>Por lo general, a medida que aumentamos el tamaño del contexto el número de palabras posibles se va reduciendo, y predecir la palabra siguiente se vuelve más fácil. Teniendo 200 mil palabras de contexto es concebible que estos modelos generen texto similar al que un humano produce.</p>
+<p>Durante muchos años, las tareas de procesamiento de lenguaje eran tratados como problemas separados. Es decir que cada tarea se intentaba resolver con un modelo específico. Por ejemplo, había modelos capaces de hacer traducción pero incapaces de resumir textos, los modelos capaces de entender el tono de un texto (positivo o negativo por ejemplo) no eran capaces de responder preguntas, etc. Los LLMs permitieron tener un modelo único que sirva para una gran variedad de tareas simultáneamente. Por esta razón se habla de “foundational models” o modelos fundacionales, porque son modelos que sirven de base para resolver varios problemas simultáneamente.</p>
+<p>En resumen, los LLMs son modelos que aprenden a predecir la palabra más probable en función de palabras previas. A pesar de ser una modelización simple, la escala es el factor crucial que permite obtener resultados de tan buena calidad. Cómo crear un modelo que sea bueno prediciendo la palabra siguiente es el tema más técnico, pero en resumen sigue el mismo patrón que expliqué <a href="../../../blog/posts/05-05-2025/05-05-2025.html">aquí</a> : tomamos una serie de textos, predecimos la palabra siguiente para cada texto y comparamos con la palabra real que seguía, luego modificamos los parámetros del modelo para maximizar el número las respuestas correctas y repetimos. Haré un blog explicando los detalles técnicos de esto más adelante, pero por el momento esta idea general es suficiente.</p>
+<p>Hasta ahora solo tenemos un modelo que predice la palabra siguiente, no una oración entera. Para generar oraciones enteras el procedimiento es bastante simple: Un usuario ingresa una oración inicial como “¿Cuál es la capital de Francia?”. Luego, el LLM predice la palabra siguiente más probable como “La”. Después, tomamos la oración original, le agregamos la predicción “La” y volvemos a pasarla por el LLM para predecir otra palabra. Repetimos este proceso y progresivamente obtenemos una oración que responde a nuestra pregunta.</p>
+<p><strong>Etapa 1:</strong></p>
+<ul>
+<li>Entrada LLM: “¿Cuál es la capital de Francia?”</li>
+<li>Salida LLM: “<strong>La</strong>”</li>
+</ul>
+<p><strong>Etapa 2:</strong></p>
+<ul>
+<li>Entrada LLM: “¿Cuál es la capital de Francia? <strong>La</strong>”</li>
+<li>Salida LLM: “<strong>capital</strong>”</li>
+</ul>
+<p><strong>Etapa 3:</strong></p>
+<ul>
+<li>Entrada LLM: “¿Cuál es la capital de Francia? <strong>La capital</strong>”</li>
+<li>Salida LLM: “<strong>de</strong>”</li>
+</ul>
+<p><strong>Etapa 4:</strong></p>
+<ul>
+<li>Entrada: “¿Cuál es la capital de Francia? <strong>La capital de</strong>”</li>
+<li>Salida: “<strong>Francia</strong>”</li>
+</ul>
+<p><strong>Etapa 5:</strong></p>
+<ul>
+<li>Entrada: “¿Cuál es la capital de Francia? <strong>La capital de Francia</strong>”</li>
+<li>Salida: “<strong>es</strong>”</li>
+</ul>
+<p><strong>Etapa 6:</strong></p>
+<ul>
+<li>Entrada: “¿Cuál es la capital de Francia? <strong>La capital de Francia es</strong>”</li>
+<li>Salida: “<strong>París</strong>”</li>
+</ul>
+<p>Espero que este ejemplo ilustre que no hay ningún tipo de razonamiento o consciencia que entra en juego a la hora de generar una respuesta.</p>
+<p>Al entender este mecanismo podemos explicar ciertos comportamientos de los LLMs. Primero, que un LLM diga algo que es falso pretendiendo que es verdadero es bastante común. Esto ocurre porque para responder a una pregunta el LLM genera la secuencia de palabras más probable y esto no garantiza que la respuesta sea correcta. Por ejemplo, si le preguntamos quién fue el primer alcalde de Santa Tecla, el LLM puede generar “José Martínez (1987-1991)” simplemente porque José es un nombre frecuente y Martínez es un apellido común también, y eso basta para que sea una respuesta probable. Segundo, esto también explica porqué los LLMs a veces fallan en razonamientos simples de matemática. Para hacer una multiplicación, los LLMs no realizan las etapas que aprendimos en primaria (que asegura que el resultado sea correcto), sino que predicen el resultado. Estos comportamientos se hacen menos frecuentes con la llegada del uso de herramientas como el acceso a una calculadora o a internet y nuevos métodos de entrenamiento como Reinforcement Learning. Sin embargo, el mecanismo sigue siendo el mismo. Incluso en el modo “razonamiento” se sigue prediciendo una palabra a la vez. Los LLMs son extremadamente útiles pero no tenemos que olvidar que por detrás no hay nada más que la predicción de la palabra más probable.</p>
+<p>Para crear algo similar a ChatGPT es importante que las respuestas sean similares a las de una conversación y que responda como un “asistente”. Nos gustaría tener respuestas más cercanas a “Necesitas que busque más información acerca de X?”, “Dime si tienes más dudas acerca de X!”, etc. en lugar de parrafos que se parezcan a lo que podríamos ver en Wikipiedia por ejemplo. En el próximo blog explicaré cómo lograr este estilo conversacional y para eso explicaré qué son los “tokens” y aclararé algunas simplificaciones que hice.</p>
+<p>Sixto :)</p>
 
 
 

@@ -1,0 +1,18 @@
+
+---
+title: ¿Cómo utilizar la IA para entender mejor a sus usuarios?
+---
+
+En general, las aplicaciones que se vuelven populares tienden a tener algún tipo de personalización. Un ejemplo de esto es Tiktok : si los usuarios pasan tanto tiempo en la aplicación es porque el contenido se alinea con lo que cada usuario quiere ver. Para lograrlo estas plataformas utilizan sistemas de recomendación, un tipo de algoritmos de IA que aprende a predecir si el usuario va a estar interesado en un ítem o no. Sin embargo, uno de los desafíos de este enfoque es que no aportan información acerca del usuario. Muchas veces se hacen recomendaciones sin entender el por qué, y aunque esto no es crítico, entender la razón puede ser extremadamente útil. Hoy voy a hablar de cómo se pueden usar los LLMs para entender mejor a los usuarios para mostrar que el uso de los LLMs no se limita a crear asistentes IA. 
+
+En un post publicado por DoorDash (un equivalente de Rappi, PedidosYa o UberEats en Estados Unidos) explican el método que han estado explorando. La idea consiste en darle información acerca de las compras realizadas por el usuario a un LLM para que genere una descripción. Un usuario puede ser caracterizado por “preferencias por la comida asiática y pokés” por ejemplo. Tener una descripción textual de este tipo parece algo trivial, pero a la escala de estas empresas con millones de usuarios hacerlo a mano es literalmente imposible. Más allá de automatizar el proceso, los LLMs son la herramienta que lo hace posible visto el volumen de datos por procesar. 
+
+La descripción del usuario luego puede ser utilizada con diferentes fines. Por una parte, tener una descripción textual de los usuarios facilita la exploración de los datos. Los equipos de marketing pueden usarla para entender mejor algunos segmentos de clientes, algo que a veces no es fácil o rápido de lograr. Ahora es más accesible entender que un cierto grupo de clientes es fánatico de la comida picante por ejemplo, permitiendo crear campañas de marketing, promociones, etc. más adaptadas. Por otra parte, esta misma descripción puede ser utilizada para mostrar mensajes más relevantes como “Porque te gusta lo picante” en lugar de “Tacos cerca de tí”. Incluso se podría utilizar para personalizar descripciones de tiendas o ítems según los intereses del usuario. 
+
+En este caso, el uso de LLMs permitió explicar mejor las preferencias de los usuarios (algo que difícil de lograr con los sistemas de recomendación tradicionales) lo que a su vez permite mejorar la personalización dentro de la plataforma y crear campañas de marketing con mejor targeting.
+
+Este es un buen ejemplo de cómo la IA está no solo mejorando, sino habilitando capacidades totalmente nuevas para las empresas. También, más allá de lo que puede aportar a una empresa, hay una línea fina entre “mejorar experiencia del usuario” y la invasión de la privacidad así que creo que es bueno tener una idea de cómo funcionan estos sistemas para poder juzgarlos uno mismo. 
+
+El blog completo de Doordash está [aquí](https://careersatdoordash.com/blog/doordash-profile-generation-llms-understanding-consumers-merchants-and-items/).
+
+Sixto :)
