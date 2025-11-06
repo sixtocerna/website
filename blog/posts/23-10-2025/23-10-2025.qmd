@@ -1,6 +1,7 @@
 
 ---
 title: ¿Cómo utilizar la IA para entender mejor a sus usuarios?
+draft: true
 ---
 
 En general, las aplicaciones que se vuelven populares tienden a tener algún tipo de personalización. Un ejemplo de esto es Tiktok : si los usuarios pasan tanto tiempo en la aplicación es porque el contenido se alinea con lo que cada usuario quiere ver. Para lograrlo estas plataformas utilizan sistemas de recomendación, un tipo de algoritmos de IA que aprende a predecir si el usuario va a estar interesado en un ítem o no. Sin embargo, uno de los desafíos de este enfoque es que no aportan información acerca del usuario. Muchas veces se hacen recomendaciones sin entender el por qué, y aunque esto no es crítico, entender la razón puede ser extremadamente útil. Hoy voy a hablar de cómo se pueden usar los LLMs para entender mejor a los usuarios para mostrar que el uso de los LLMs no se limita a crear asistentes IA. 
